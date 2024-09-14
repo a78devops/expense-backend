@@ -3,5 +3,7 @@ on: [push]
 jobs:
   call-continuous-integration-reusable:
     uses: a78devops/github-reusable-workflows/.github/workflows/ci.yml@main
+    with:
+      project_name: expense-backend
 
 
